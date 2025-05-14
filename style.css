@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    background-color: #fcfbff;
+    display: flex;
+    justify-content: center;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: lightgray; 
+}
+  
+main {
+    width: 1120px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #fcfbff;
+    box-shadow: 0 1px 0 #ececec;
+    max-width: 1120px;
+    width: 100%;
+}
+  
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+  
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+section#home{  
+    height: calc(100vh + 70px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.home-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: justify;
+}
+
+.home-info button {
+    border: none;
+    width: 150px;
+    padding: 10px;
+    background-color: #7700ff;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+.home-info button a{
+    color: white;
+}
+  
+.home-info button:hover{
+    opacity: 1;
+}
+  
+.home-img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.home-img img {
+    width: 250px;
+    height: 250px;
+    animation: float 5s ease-in-out infinite;
+    box-shadow: 0 10px 10px;
+    border-radius: 50%;
+}
+
+section#sobre {
+    border-left: .1rem solid #a81e1e;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-top: 100px;
+}
+
+#sobre .title {
+    font-size: 2rem;
+}
+
+#sobre span {
+    font-size: 3rem;
+}
+
+#sobre .descricao {
+    line-height: 2rem;
+    margin-top: 1rem;
+    width: 80%;
+}
+
+section#tecnologias {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#tecnologias .tecs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+#tecnologias .tecs div {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 100px;
+}
+
+#tecnologias .tecs img {
+    height: 60px;
+    width: 60px;
+}
+
+#tecnologias .tecs span {
+    margin-top: auto;
+}
+
+#tecnologias-id {
+    font-size: 3rem;
+    text-align: center;
+}
+
+section#projetos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+/*#projetos h1 {
+    font-size: 3rem;
+    text-align: center;
+}*/
+
+#projetos .cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.card {
+    margin: 50px;
+    background-color: rgb(218, 220, 230);
+    width: 300px;
+    height: 420px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card h1 {
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.card p {
+    font-size: 15px;
+    padding: 20px 20px;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#projetos-id {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.cards button {
+    font-size: 15px;
+    padding: 10px 50px;
+    border: none;
+    background-color: #202020;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+section#contato{
+    padding: 80px 4%;
+    margin-top: 100px;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color:rgb(165, 169, 188);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;    
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #202020;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#contato-id {
+    font-size: 3rem;
+    text-align: center;
+}
+
+footer {
+    border-top: 2px solid black;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+#foot {
+    font-size: 15px;
+}

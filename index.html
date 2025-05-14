@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/mauri-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Mauri Brito</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp3mLSyAnvKW1nwdbpsY3Om8YpqB-CQmv_MA&s" width="50px" height="50px" alt="Logo do Site">
+            </div>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#tecnologias">Tecnologias</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="home-info">
+              <h2>Olá, sou Mauri</h2>
+              <span class="home-position">Desenvolvedor Back-End</span>
+              <span class="home-resume">
+                Graduado em Ciência da Computação, com experiência em desenvolvimento back-end utilizando Java, Spring e PostgreSQL.
+              </span>
+      
+              <button>
+                <a href="#contato">Contate-me</a>
+              </button>
+            </div>
+            <div class="home-img">
+              <img src="https://img.freepik.com/fotos-gratis/jovem-barbudo-com-camisa-listrada_273609-5677.jpg?semt=ais_hybrid&w=740" alt="Foto de perfil">
+            </div>
+        </section>
+
+        <section id="sobre">
+            <p class="title">Sobre Mim</p>
+            <span>Sou um Desenvolvedor</span>
+            <span>Back End</span>
+            <p class="descricao">
+                Sou um desenvolvedor back-end apaixonado por criar soluções eficientes e escaláveis. Trabalho com Java e Spring, desenvolvendo APIs robustas e otimizando bancos de dados. Tenho experiência em arquitetura de software, segurança e integração de sistemas. Busco sempre aprimorar minhas habilidades e acompanhar as tendências tecnológicas. Gosto de desafios que exigem lógica e criatividade para resolver problemas complexos. Meu objetivo é construir sistemas confiáveis que impulsionem negócios e facilitem a vida dos usuários.
+            </p>
+        </section>
+
+        <section id="tecnologias">
+            <h1 id="tecnologias-id">Tecnologias</h1>
+            <div class="tecs">
+                <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="JAVA">
+                    <span>JAVA</span>
+                </div>
+                <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="SPRING">
+                    <span>SPRING</span>
+                </div>
+                <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="POSTGRESQL">
+                    <span>POSTGRESQL</span>
+                </div>
+                <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="GIT">
+                    <span>GIT</span>
+                </div>
+                <div>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GITHUB">
+                    <span>GITHUB</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h1 id="projetos-id">Projetos</h1>
+            <!-- Projetos aqui -->
+            <div class="cards">
+                <div class="card card1">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Projeto 1">
+                    <h1>SISTEMA DE GESTÃO DE TAREFAS</h1>
+                    <p>
+                        API REST para gerenciar tarefas, com autenticação de usuários, criação, edição e filtros por status e prazo, usando Java, Spring Boot e PostgreSQL.
+                    </p>
+                    <button>Ver Projeto</button>
+                </div>
+                <div class="card card2">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Projeto 2">
+                    <h1>E-COMMERCE SIMPLES</h1>
+                    <p>
+                        Back-end para um e-commerce básico, permitindo cadastro de produtos, gerenciamento de pedidos e autenticação de clientes, com Spring Boot, PostgreSQL e JWT.
+                    </p>
+                    <button>Ver Projeto</button>
+                </div>
+                <div class="card card3">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Projeto 3">
+                    <h1>API DE MONITORAMENTO DE GASTOS</h1>
+                    <p>
+                        Sistema para registrar despesas e receitas, categorizá-las e gerar relatórios financeiros, utilizando Java, Spring Boot e PostgreSQL.
+                    </p>
+                    <button>Ver Projeto</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="interface">
+                <h1 id="contato-id">FALA <span>COMIGO.</span></h1>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                    <textarea name="" id="" placeholder="sua mensagem:" required></textarea>
+                    <div class="btn-enviar"> <input type="submit" value="Enviar"> </div> 
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p id="foot">&copy; 2025 Todos os direitos reservados.</p>
+        </footer>
+    </main>
+
+</body>
+</html>
